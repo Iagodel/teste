@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <form action="">
+
+        <!-- Input Name -->
+        <div>
+            <br>
+            <p>Digite seu nome</p>
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required >
+        </div>
+
+        <!-- Input Radio -->
+        <div>
+            <p>Onde você está vendo esse form?</p>
+
+            <div>
+                <input type="radio" id="desk" name="unique">
+                <label for="desk">Notebook/Desktop</label>
+            </div>
+            <div>
+                <input type="radio" id="cel" name="unique">
+                <label for="cel">Celular</label>
+            </div> 
+            <div>
+                <input type="radio" id="tablet" name="unique">
+                <label for="tablet">Tablet</label>
+            </div>
+            <div>
+                <input type="radio" id="nem" name="unique">
+                <label for="nem">Nenhuma das opções</label>
+            </div>
+            
+        </div>
+
+        <!-- Input Select-->        
+        <br>
+        <div>
+            <label for="curso">Selecione o seu curso:</label>
+            <select name="curso" id="curso" required>
+                <option selected disabled>Selecione... </option>
+                <option value="engenharia">Engenharia da Computação</option>
+                <option value="ciencia">Ciencia da Computação</option>
+                <option value="analise">Analise e Desenvolvimento de Sistemas</option>
+                <option value="analise">Psicologia</option>
+            </select>
+        </div>
+
+        <!-- Input Checkbox-->
+        <br>
+        <div>
+            <p>Estou testando o HTML</p>
+
+            <div>                
+                <input type="checkbox" name="check" id="check1">
+                <label for="check1">Consegui</label>
+            </div>
+
+            <div>                
+                <input type="checkbox" name="check" id="check2">
+                <label for="check2">Com maestria</label>
+            </div>
+
+            <div>                
+                <input type="checkbox" name="check" id="check3">
+                <label for="check3">Ou não</label>
+            </div>
+
+
+        </div>
+
+        <!-- Input Datetime-->
+        <br>
+        <div>
+            <p>Que dia é hoje?</p>
+            
+            <div>
+                <label for="">Data</label>
+                <br>                
+                <input type="date" name="data" id="data">                
+            </div>
+
+        </div>
+
+        <!-- Input Senha-->
+        <br>
+        <div>
+            <p>Digite uma senha para o teste</p>
+            
+            <div>
+                <label for="">Senha:</label>
+                <br>                
+                <input type="password" name="senha" id="senha">                
+            </div>
+
+        </div>
+
+        <!-- Input Range-->
+        <br>
+        <div>
+            <p>Digite a distancia entre eles</p>
+            
+            <div>
+                <label for="range">Distancia</label>
+                <br>                
+                <input type="range" name="range" id="range" min="0" max="100" step="1" value="">              
+            </div>
+
+        </div>
+
+        <br>
+        <button>Sim</button>
+    </form>
+
+</body>
+</html>
